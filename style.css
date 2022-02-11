@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --shadow-1:0 .125rem .25rem rgb(0 0 0, 50%);
+    --shadow-2:0 .5rem 1rem rgba(0,0,0,.15);
+    --shadow-3:0 1rem 3rem rgba(0,0,0,.175);
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a, a:hover{
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+
+/* top tab */
+.main_tab{
+    margin: 100px 0px;
+    background: white;
+}
+.tohi_tab .tab_head ul{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+.tohi_tab .tab_head ul a{
+    /* background: red; */
+    padding: 14px 28px;
+    color: black;
+    border-bottom: 1px solid #c6c6c6;
+}
+.tohi_tab .tab_head ul a.active{
+border-bottom: none; 
+border-top: 1px solid #c6c6c6;
+border-left: 1px solid #c6c6c6;
+border-right: 1px solid #c6c6c6;
+border-radius: 6px 6px 0px 0px;
+}
+.tohi_tab .tab_body{
+    padding: 12px 12px;
+    border-bottom: 1px solid #c6c6c6;
+    border-left: 1px solid #c6c6c6;
+    border-right: 1px solid #c6c6c6;
+    border-radius: 0px 0px 8px 8px;
+}
+.tohi_tab .tab_body .tab_pane{
+    background: darkorchid;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    display: none;
+}
+.tohi_tab .tab_body .tab_pane.active{
+    display: block;
+}
+
+
+
+/* left tab */
+
+.side_tab{
+    margin: 100px 0px;
+}
+.left_tab ul a{
+    background: #1d2327;
+    color: white;
+    width: 100%;
+    padding: 10px 20px;
+    border-left: 5px solid transparent;
+}
+.left_tab ul a:hover{
+    color: #72aee6;
+    border-left: 5px solid #72aee6;
+}
+.left_tab ul a:focus{
+    background: #2271b1;
+    border-left: 5px solid white;
+}
+.left_tab ul li:first-child a{
+    padding-top: 16px;
+}
+.left_tab ul li:last-child a{
+    padding-bottom: 16px;
+}
+.left_tab ul a i{
+    width: 16%;
+}
+.right_contents{
+    background: #f0f0f1;
+    padding: 20px 30px;
+    height: 100%;
+}
+.right_contents .tab_content{
+    display: none;
+}
+.right_contents .tab_content.active{
+    display: block;
+}
